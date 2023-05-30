@@ -95,16 +95,16 @@ const Home = () => {
   return (
     <div className="root">
   <Head>
-    <title>Silly picture generator</title>
+    <title>Manifestoor</title>
   </Head>
   <div className="container">
     <div className="header">
       <div className="header-title">
-        <h1>Silly picture generator</h1>
+        <h1>Manifestoor🐊</h1>
       </div>
       <div className="header-subtitle">
         <h2>
-          Turn me into anyone you want! Make sure you refer to me as "ronka" in the prompt
+          Turn me into anyone you want(hulk please!) Make sure you refer to me as "ronka" in the prompt 
         </h2>
       </div>
       <div className="prompt-container">
