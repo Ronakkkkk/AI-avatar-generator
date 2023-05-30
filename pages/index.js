@@ -19,10 +19,10 @@ const Home = () => {
   const generateAction = async () => {
     console.log('Generating...');	
      // Add this check to make sure there is no double click
-  if (isGenerating && retry === 0) return;
+    if (isGenerating && retry === 0) return;
 
   // Set loading has started
-  setIsGenerating(true);
+    setIsGenerating(true);
     
     // If this is a retry request, take away retryCount
     if (retry > 0) {
@@ -36,6 +36,7 @@ const Home = () => {
 
       setRetry(0);
     }
+    //const finalInput = input.replace(/ronak/, "ronka");
     const response = await fetch('/api/generate', {
       method: 'POST',
       headers: {
@@ -59,7 +60,7 @@ const Home = () => {
     }
     setFinalPrompt(input);
     setInput('');
-    setImg(data.Image);
+    setImg(data.image);
     setIsGenerating(false);
   }
   
@@ -94,7 +95,7 @@ const Home = () => {
   return (
     <div className="root">
   <Head>
-    <title>Silly picture generator | buildspace</title>
+    <title>Silly picture generator</title>
   </Head>
   <div className="container">
     <div className="header">
@@ -142,7 +143,7 @@ const Home = () => {
     >
       <div className="badge">
         <Image src={buildspaceLogo} alt="buildspace logo" />
-        <p>build with buildspace</p>
+        <p>build with bulit</p>
       </div>
     </a>
   </div>
